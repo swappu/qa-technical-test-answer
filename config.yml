@@ -1,0 +1,29 @@
+# Python CircleCI 2.0 configuration file
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.7
+
+    steps:
+      # Step 1: obtain repo from GitHub
+      - checkout
+      # Step 2: create virtual env and install dependencies
+      - run:
+          name: install dependencies
+          command: |
+            python3 -m venv venv
+            pip install -r requirements.txt
+      # Step 3: run linter and tests
+      - run:
+          name: run tests
+          command: |
+            python3 -m pytest -sv --html report.html
+      - setup_remote_docker:
+          docker_layer_caching: true
+      # Step 4: Deploy
+      - run:
+          name: Build and push Docker image
+          command: |
+            docker build -t sensynehealthqa:v1 .
+            docker run -p 5000:5000 -t sensynehealthqa:v1
