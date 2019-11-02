@@ -241,7 +241,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 02-Nov-2019 at 13:42:46 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.0</p>
+    <p>Report generated on 02-Nov-2019 at 19:29:01 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -257,8 +257,8 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.7.4</td></tr></table>
     <h2>Summary</h2>
-    <p>5 tests ran in 0.51 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">5 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>10 tests ran in 0.64 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">10 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -277,7 +277,7 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     log_api:test_products.py:69 -----------Request-----------&gt;
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>[32mINFO    [0m log_api:test_products.py:69 -----------Request-----------&gt;
                                      DELETE http://localhost:5000/v1/product/1
                                      
                                      User-Agent: python-requests/2.22.0
@@ -288,7 +288,7 @@ function filter_table(elem) {
                                      Content-Length: 0
                                      
                                      None
-INFO     log_api:test_products.py:69 -----------Request-----------&gt;
+[32mINFO    [0m log_api:test_products.py:69 -----------Request-----------&gt;
                                      DELETE http://localhost:5000/v1/product/3
                                      
                                      User-Agent: python-requests/2.22.0
@@ -299,7 +299,7 @@ INFO     log_api:test_products.py:69 -----------Request-----------&gt;
                                      Content-Length: 0
                                      
                                      None
-INFO     log_api:test_products.py:69 -----------Request-----------&gt;
+[32mINFO    [0m log_api:test_products.py:69 -----------Request-----------&gt;
                                      DELETE http://localhost:5000/v1/product/4
                                      
                                      User-Agent: python-requests/2.22.0
@@ -309,8 +309,30 @@ INFO     log_api:test_products.py:69 -----------Request-----------&gt;
                                      Content-Type: application/json
                                      Content-Length: 0
                                      
-                                     None<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     log:test_products.py:167 Calling test_products_api_result.
-INFO     log_api:test_products.py:69 -----------Request-----------&gt;
+                                     None
+[32mINFO    [0m log_api:test_products.py:69 -----------Request-----------&gt;
+                                     DELETE http://localhost:5000/v1/product/5
+                                     
+                                     User-Agent: python-requests/2.22.0
+                                     Accept-Encoding: gzip, deflate
+                                     Accept: */*
+                                     Connection: keep-alive
+                                     Content-Type: application/json
+                                     Content-Length: 0
+                                     
+                                     None
+[32mINFO    [0m log_api:test_products.py:69 -----------Request-----------&gt;
+                                     DELETE http://localhost:5000/v1/product/6
+                                     
+                                     User-Agent: python-requests/2.22.0
+                                     Accept-Encoding: gzip, deflate
+                                     Accept: */*
+                                     Connection: keep-alive
+                                     Content-Type: application/json
+                                     Content-Length: 0
+                                     
+                                     None<br/> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m log:test_products.py:169 Calling test_products_api_result.
+[32mINFO    [0m log_api:test_products.py:69 -----------Request-----------&gt;
                                      GET http://localhost:5000/v1/products
                                      
                                      User-Agent: python-requests/2.22.0
@@ -320,16 +342,16 @@ INFO     log_api:test_products.py:69 -----------Request-----------&gt;
                                      Content-Type: application/json
                                      
                                      None
-INFO     log_api:test_products.py:105 &lt;-----------Response-----------
+[32mINFO    [0m log_api:test_products.py:105 &lt;-----------Response-----------
                                       Status code:200
                                       
                                       Content-Length: 3
                                       Content-Type: application/json
-                                      Date: Sat, 02 Nov 2019 13:42:46 GMT
+                                      Date: Sat, 02 Nov 2019 19:29:01 GMT
                                       Server: waitress
                                       
                                       []
-INFO     log_api:test_products.py:69 -----------Request-----------&gt;
+[32mINFO    [0m log_api:test_products.py:69 -----------Request-----------&gt;
                                      POST http://localhost:5000/v1/product
                                      
                                      User-Agent: python-requests/2.22.0
@@ -340,7 +362,7 @@ INFO     log_api:test_products.py:69 -----------Request-----------&gt;
                                      Content-Length: 36
                                      
                                      {&quot;name&quot;: &quot;Samsung&quot;, &quot;price&quot;: 899.99}
-INFO     log_api:test_products.py:69 -----------Request-----------&gt;
+[32mINFO    [0m log_api:test_products.py:69 -----------Request-----------&gt;
                                      POST http://localhost:5000/v1/product
                                      
                                      User-Agent: python-requests/2.22.0
@@ -351,7 +373,7 @@ INFO     log_api:test_products.py:69 -----------Request-----------&gt;
                                      Content-Length: 35
                                      
                                      {&quot;name&quot;: &quot;Apple&quot;, &quot;price&quot;: 1199.99}
-INFO     log_api:test_products.py:69 -----------Request-----------&gt;
+[32mINFO    [0m log_api:test_products.py:69 -----------Request-----------&gt;
                                      POST http://localhost:5000/v1/product
                                      
                                      User-Agent: python-requests/2.22.0
@@ -362,7 +384,7 @@ INFO     log_api:test_products.py:69 -----------Request-----------&gt;
                                      Content-Length: 32
                                      
                                      {&quot;name&quot;: &quot;Huawei&quot;, &quot;price&quot;: 500}
-INFO     log_api:test_products.py:69 -----------Request-----------&gt;
+[32mINFO    [0m log_api:test_products.py:69 -----------Request-----------&gt;
                                      GET http://localhost:5000/v1/products
                                      
                                      User-Agent: python-requests/2.22.0
@@ -372,12 +394,12 @@ INFO     log_api:test_products.py:69 -----------Request-----------&gt;
                                      Content-Type: application/json
                                      
                                      None
-INFO     log_api:test_products.py:105 &lt;-----------Response-----------
+[32mINFO    [0m log_api:test_products.py:105 &lt;-----------Response-----------
                                       Status code:200
                                       
                                       Content-Length: 202
                                       Content-Type: application/json
-                                      Date: Sat, 02 Nov 2019 13:42:46 GMT
+                                      Date: Sat, 02 Nov 2019 19:29:01 GMT
                                       Server: waitress
                                       
                                       [
@@ -397,7 +419,7 @@ INFO     log_api:test_products.py:105 &lt;-----------Response-----------
                                               &quot;price&quot;: &quot;500.00&quot;
                                           }
                                       ]
-INFO     log:test_products.py:184 Test test_products_api_result passed.<br/></div></td></tr></tbody>
+[32mINFO    [0m log:test_products.py:186 Test test_products_api_result passed.<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
@@ -406,8 +428,8 @@ INFO     log:test_products.py:184 Test test_products_api_result passed.<br/></di
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     log:test_products.py:187 Calling test_product_put_result.
-INFO     log_api:test_products.py:69 -----------Request-----------&gt;
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m log:test_products.py:189 Calling test_product_put_result.
+[32mINFO    [0m log_api:test_products.py:69 -----------Request-----------&gt;
                                      PUT http://localhost:5000/v1/product/3
                                      
                                      User-Agent: python-requests/2.22.0
@@ -418,7 +440,7 @@ INFO     log_api:test_products.py:69 -----------Request-----------&gt;
                                      Content-Length: 43
                                      
                                      {&quot;name&quot;: &quot;Samsung Galaxy&quot;, &quot;price&quot;: 799.99}
-INFO     log_api:test_products.py:69 -----------Request-----------&gt;
+[32mINFO    [0m log_api:test_products.py:69 -----------Request-----------&gt;
                                      PUT http://localhost:5000/v1/product/100
                                      
                                      User-Agent: python-requests/2.22.0
@@ -429,12 +451,12 @@ INFO     log_api:test_products.py:69 -----------Request-----------&gt;
                                      Content-Length: 43
                                      
                                      {&quot;name&quot;: &quot;Samsung Galaxy&quot;, &quot;price&quot;: 799.99}
-INFO     log_api:test_products.py:105 &lt;-----------Response-----------
+[32mINFO    [0m log_api:test_products.py:105 &lt;-----------Response-----------
                                       Status code:404
                                       
                                       Content-Length: 205
                                       Content-Type: application/problem+json
-                                      Date: Sat, 02 Nov 2019 13:42:46 GMT
+                                      Date: Sat, 02 Nov 2019 19:29:01 GMT
                                       Server: waitress
                                       
                                       {
@@ -443,7 +465,7 @@ INFO     log_api:test_products.py:105 &lt;-----------Response-----------
                                           &quot;title&quot;: &quot;Not Found&quot;,
                                           &quot;type&quot;: &quot;about:blank&quot;
                                       }
-INFO     log:test_products.py:195 Test test_product_put_result passed.<br/></div></td></tr></tbody>
+[32mINFO    [0m log:test_products.py:197 Test test_product_put_result passed.<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
@@ -452,8 +474,8 @@ INFO     log:test_products.py:195 Test test_product_put_result passed.<br/></div
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     log:test_products.py:198 Calling test_product_post_result.
-INFO     log_api:test_products.py:69 -----------Request-----------&gt;
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m log:test_products.py:200 Calling test_product_post_result.
+[32mINFO    [0m log_api:test_products.py:69 -----------Request-----------&gt;
                                      POST http://localhost:5000/v1/product
                                      
                                      User-Agent: python-requests/2.22.0
@@ -464,7 +486,94 @@ INFO     log_api:test_products.py:69 -----------Request-----------&gt;
                                      Content-Length: 31
                                      
                                      {&quot;name&quot;: &quot;LG&quot;, &quot;price&quot;: 999.99}
-INFO     log:test_products.py:203 Test test_product_post_result passed.<br/></div></td></tr></tbody>
+[32mINFO    [0m log:test_products.py:205 Test test_product_post_result passed.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/test_products.py::TestProductsAPI::test_product_empty_post_result</td>
+          <td class="col-duration">0.01</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m log:test_products.py:208 Calling test_product_empty_post_result.
+[32mINFO    [0m log:test_products.py:215 Test test_product_empty_post_result passed.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/test_products.py::TestProductsAPI::test_product_post_special_characters_in_product</td>
+          <td class="col-duration">0.02</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m log:test_products.py:218 Calling test_product_post_special_characters_in_product.
+[32mINFO    [0m log_api:test_products.py:69 -----------Request-----------&gt;
+                                     POST http://localhost:5000/v1/product
+                                     
+                                     User-Agent: python-requests/2.22.0
+                                     Accept-Encoding: gzip, deflate
+                                     Accept: */*
+                                     Connection: keep-alive
+                                     Content-Type: application/json
+                                     Content-Length: 31
+                                     
+                                     {&quot;name&quot;: &quot;@pp%E12&quot;, &quot;price&quot;: 6}
+[32mINFO    [0m log:test_products.py:222 Test test_product_post_special_characters_in_product passed.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/test_products.py::TestProductsAPI::test_product_post_negative_numbers_in_product</td>
+          <td class="col-duration">0.02</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m log:test_products.py:225 Calling test_product_post_negative_numbers_in_product.
+[32mINFO    [0m log_api:test_products.py:69 -----------Request-----------&gt;
+                                     POST http://localhost:5000/v1/product
+                                     
+                                     User-Agent: python-requests/2.22.0
+                                     Accept-Encoding: gzip, deflate
+                                     Accept: */*
+                                     Connection: keep-alive
+                                     Content-Type: application/json
+                                     Content-Length: 34
+                                     
+                                     {&quot;name&quot;: &quot;Nokia&quot;, &quot;price&quot;: -45.99}
+[32mINFO    [0m log:test_products.py:229 Test test_product_post_negative_numbers_in_product passed.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/test_products.py::TestProductsAPI::test_product_post_invalid_value_in_product</td>
+          <td class="col-duration">0.02</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m log:test_products.py:232 Calling test_product_post_invalid_value_in_product.
+[32mINFO    [0m log_api:test_products.py:69 -----------Request-----------&gt;
+                                     POST http://localhost:5000/v1/product
+                                     
+                                     User-Agent: python-requests/2.22.0
+                                     Accept-Encoding: gzip, deflate
+                                     Accept: */*
+                                     Connection: keep-alive
+                                     Content-Type: application/json
+                                     Content-Length: 36
+                                     
+                                     {&quot;name&quot;: &quot;Huawei&quot;, &quot;price&quot;: &quot;10,99&quot;}
+[32mINFO    [0m log_api:test_products.py:105 &lt;-----------Response-----------
+                                      Status code:400
+                                      
+                                      Content-Length: 118
+                                      Content-Type: application/problem+json
+                                      Date: Sat, 02 Nov 2019 19:29:01 GMT
+                                      Server: waitress
+                                      
+                                      {
+                                          &quot;detail&quot;: &quot;&#x27;10,99&#x27; is not of type &#x27;number&#x27;&quot;,
+                                          &quot;status&quot;: 400,
+                                          &quot;title&quot;: &quot;Bad Request&quot;,
+                                          &quot;type&quot;: &quot;about:blank&quot;
+                                      }
+[32mINFO    [0m log:test_products.py:236 Test test_product_post_invalid_value_in_product passed.<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
@@ -473,8 +582,8 @@ INFO     log:test_products.py:203 Test test_product_post_result passed.<br/></di
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     log:test_products.py:206 Calling test_product_get_result.
-INFO     log_api:test_products.py:69 -----------Request-----------&gt;
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m log:test_products.py:239 Calling test_product_get_result.
+[32mINFO    [0m log_api:test_products.py:69 -----------Request-----------&gt;
                                      GET http://localhost:5000/v1/product/4
                                      
                                      User-Agent: python-requests/2.22.0
@@ -484,12 +593,12 @@ INFO     log_api:test_products.py:69 -----------Request-----------&gt;
                                      Content-Type: application/json
                                      
                                      None
-INFO     log_api:test_products.py:105 &lt;-----------Response-----------
+[32mINFO    [0m log_api:test_products.py:105 &lt;-----------Response-----------
                                       Status code:200
                                       
                                       Content-Length: 51
                                       Content-Type: application/json
-                                      Date: Sat, 02 Nov 2019 13:42:46 GMT
+                                      Date: Sat, 02 Nov 2019 19:29:01 GMT
                                       Server: waitress
                                       
                                       {
@@ -497,7 +606,41 @@ INFO     log_api:test_products.py:105 &lt;-----------Response-----------
                                           &quot;name&quot;: &quot;LG&quot;,
                                           &quot;price&quot;: &quot;999.99&quot;
                                       }
-INFO     log:test_products.py:218 Test test_product_get_result passed.<br/></div></td></tr></tbody>
+[32mINFO    [0m log:test_products.py:251 Test test_product_get_result passed.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/test_products.py::TestProductsAPI::test_product_get_with_invalid_index_result</td>
+          <td class="col-duration">0.02</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m log:test_products.py:254 Calling test_product_get_with_invalid_index_result.
+[32mINFO    [0m log_api:test_products.py:69 -----------Request-----------&gt;
+                                     GET http://localhost:5000/v1/product/0
+                                     
+                                     User-Agent: python-requests/2.22.0
+                                     Accept-Encoding: gzip, deflate
+                                     Accept: */*
+                                     Connection: keep-alive
+                                     Content-Type: application/json
+                                     
+                                     None
+[32mINFO    [0m log_api:test_products.py:105 &lt;-----------Response-----------
+                                      Status code:404
+                                      
+                                      Content-Length: 205
+                                      Content-Type: application/problem+json
+                                      Date: Sat, 02 Nov 2019 19:29:01 GMT
+                                      Server: waitress
+                                      
+                                      {
+                                          &quot;detail&quot;: &quot;The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.&quot;,
+                                          &quot;status&quot;: 404,
+                                          &quot;title&quot;: &quot;Not Found&quot;,
+                                          &quot;type&quot;: &quot;about:blank&quot;
+                                      }
+[32mINFO    [0m log:test_products.py:259 Test test_product_get_with_invalid_index_result passed.<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
@@ -506,8 +649,8 @@ INFO     log:test_products.py:218 Test test_product_get_result passed.<br/></div
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     log:test_products.py:221 Calling test_product_delete_result.
-INFO     log_api:test_products.py:69 -----------Request-----------&gt;
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m log:test_products.py:262 Calling test_product_delete_result.
+[32mINFO    [0m log_api:test_products.py:69 -----------Request-----------&gt;
                                      DELETE http://localhost:5000/v1/product/2
                                      
                                      User-Agent: python-requests/2.22.0
@@ -518,7 +661,7 @@ INFO     log_api:test_products.py:69 -----------Request-----------&gt;
                                      Content-Length: 0
                                      
                                      None
-INFO     log_api:test_products.py:69 -----------Request-----------&gt;
+[32mINFO    [0m log_api:test_products.py:69 -----------Request-----------&gt;
                                      GET http://localhost:5000/v1/product/2
                                      
                                      User-Agent: python-requests/2.22.0
@@ -528,12 +671,12 @@ INFO     log_api:test_products.py:69 -----------Request-----------&gt;
                                      Content-Type: application/json
                                      
                                      None
-INFO     log_api:test_products.py:105 &lt;-----------Response-----------
+[32mINFO    [0m log_api:test_products.py:105 &lt;-----------Response-----------
                                       Status code:404
                                       
                                       Content-Length: 205
                                       Content-Type: application/problem+json
-                                      Date: Sat, 02 Nov 2019 13:42:46 GMT
+                                      Date: Sat, 02 Nov 2019 19:29:01 GMT
                                       Server: waitress
                                       
                                       {
@@ -542,7 +685,7 @@ INFO     log_api:test_products.py:105 &lt;-----------Response-----------
                                           &quot;title&quot;: &quot;Not Found&quot;,
                                           &quot;type&quot;: &quot;about:blank&quot;
                                       }
-INFO     log_api:test_products.py:69 -----------Request-----------&gt;
+[32mINFO    [0m log_api:test_products.py:69 -----------Request-----------&gt;
                                      DELETE http://localhost:5000/v1/product/2
                                      
                                      User-Agent: python-requests/2.22.0
@@ -553,12 +696,12 @@ INFO     log_api:test_products.py:69 -----------Request-----------&gt;
                                      Content-Length: 0
                                      
                                      None
-INFO     log_api:test_products.py:105 &lt;-----------Response-----------
+[32mINFO    [0m log_api:test_products.py:105 &lt;-----------Response-----------
                                       Status code:404
                                       
                                       Content-Length: 205
                                       Content-Type: application/problem+json
-                                      Date: Sat, 02 Nov 2019 13:42:46 GMT
+                                      Date: Sat, 02 Nov 2019 19:29:01 GMT
                                       Server: waitress
                                       
                                       {
@@ -567,4 +710,4 @@ INFO     log_api:test_products.py:105 &lt;-----------Response-----------
                                           &quot;title&quot;: &quot;Not Found&quot;,
                                           &quot;type&quot;: &quot;about:blank&quot;
                                       }
-INFO     log:test_products.py:230 Test test_product_delete_result passed.<br/></div></td></tr></tbody></table></body></html>
+[32mINFO    [0m log:test_products.py:271 Test test_product_delete_result passed.<br/></div></td></tr></tbody></table></body></html>

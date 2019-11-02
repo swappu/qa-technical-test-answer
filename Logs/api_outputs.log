@@ -1,4 +1,4 @@
-2019-11-02 12:19:02: -----------Request----------->
+2019-11-02 07:29:01: -----------Request----------->
 DELETE http://localhost:5000/v1/product/1
 
 User-Agent: python-requests/2.22.0
@@ -10,7 +10,7 @@ Content-Length: 0
 
 None
 
-2019-11-02 12:19:02: -----------Request----------->
+2019-11-02 07:29:01: -----------Request----------->
 DELETE http://localhost:5000/v1/product/3
 
 User-Agent: python-requests/2.22.0
@@ -22,7 +22,7 @@ Content-Length: 0
 
 None
 
-2019-11-02 12:19:02: -----------Request----------->
+2019-11-02 07:29:01: -----------Request----------->
 DELETE http://localhost:5000/v1/product/4
 
 User-Agent: python-requests/2.22.0
@@ -34,7 +34,31 @@ Content-Length: 0
 
 None
 
-2019-11-02 12:19:02: -----------Request----------->
+2019-11-02 07:29:01: -----------Request----------->
+DELETE http://localhost:5000/v1/product/5
+
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Type: application/json
+Content-Length: 0
+
+None
+
+2019-11-02 07:29:01: -----------Request----------->
+DELETE http://localhost:5000/v1/product/6
+
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Type: application/json
+Content-Length: 0
+
+None
+
+2019-11-02 07:29:01: -----------Request----------->
 GET http://localhost:5000/v1/products
 
 User-Agent: python-requests/2.22.0
@@ -45,17 +69,17 @@ Content-Type: application/json
 
 None
 
-2019-11-02 12:19:02: <-----------Response-----------
+2019-11-02 07:29:01: <-----------Response-----------
 Status code:200
 
 Content-Length: 3
 Content-Type: application/json
-Date: Sat, 02 Nov 2019 12:19:02 GMT
+Date: Sat, 02 Nov 2019 19:29:01 GMT
 Server: waitress
 
 []
 
-2019-11-02 12:19:02: -----------Request----------->
+2019-11-02 07:29:01: -----------Request----------->
 POST http://localhost:5000/v1/product
 
 User-Agent: python-requests/2.22.0
@@ -67,7 +91,7 @@ Content-Length: 36
 
 {"name": "Samsung", "price": 899.99}
 
-2019-11-02 12:19:02: -----------Request----------->
+2019-11-02 07:29:01: -----------Request----------->
 POST http://localhost:5000/v1/product
 
 User-Agent: python-requests/2.22.0
@@ -79,7 +103,7 @@ Content-Length: 35
 
 {"name": "Apple", "price": 1199.99}
 
-2019-11-02 12:19:02: -----------Request----------->
+2019-11-02 07:29:01: -----------Request----------->
 POST http://localhost:5000/v1/product
 
 User-Agent: python-requests/2.22.0
@@ -91,7 +115,7 @@ Content-Length: 32
 
 {"name": "Huawei", "price": 500}
 
-2019-11-02 12:19:02: -----------Request----------->
+2019-11-02 07:29:01: -----------Request----------->
 GET http://localhost:5000/v1/products
 
 User-Agent: python-requests/2.22.0
@@ -102,12 +126,12 @@ Content-Type: application/json
 
 None
 
-2019-11-02 12:19:02: <-----------Response-----------
+2019-11-02 07:29:01: <-----------Response-----------
 Status code:200
 
 Content-Length: 202
 Content-Type: application/json
-Date: Sat, 02 Nov 2019 12:19:02 GMT
+Date: Sat, 02 Nov 2019 19:29:01 GMT
 Server: waitress
 
 [
@@ -128,7 +152,7 @@ Server: waitress
     }
 ]
 
-2019-11-02 12:19:02: -----------Request----------->
+2019-11-02 07:29:01: -----------Request----------->
 PUT http://localhost:5000/v1/product/3
 
 User-Agent: python-requests/2.22.0
@@ -140,7 +164,7 @@ Content-Length: 43
 
 {"name": "Samsung Galaxy", "price": 799.99}
 
-2019-11-02 12:19:02: -----------Request----------->
+2019-11-02 07:29:01: -----------Request----------->
 PUT http://localhost:5000/v1/product/100
 
 User-Agent: python-requests/2.22.0
@@ -152,12 +176,12 @@ Content-Length: 43
 
 {"name": "Samsung Galaxy", "price": 799.99}
 
-2019-11-02 12:19:02: <-----------Response-----------
+2019-11-02 07:29:01: <-----------Response-----------
 Status code:404
 
 Content-Length: 205
 Content-Type: application/problem+json
-Date: Sat, 02 Nov 2019 12:19:02 GMT
+Date: Sat, 02 Nov 2019 19:29:01 GMT
 Server: waitress
 
 {
@@ -167,7 +191,7 @@ Server: waitress
     "type": "about:blank"
 }
 
-2019-11-02 12:19:02: -----------Request----------->
+2019-11-02 07:29:01: -----------Request----------->
 POST http://localhost:5000/v1/product
 
 User-Agent: python-requests/2.22.0
@@ -179,7 +203,58 @@ Content-Length: 31
 
 {"name": "LG", "price": 999.99}
 
-2019-11-02 12:19:02: -----------Request----------->
+2019-11-02 07:29:01: -----------Request----------->
+POST http://localhost:5000/v1/product
+
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Type: application/json
+Content-Length: 31
+
+{"name": "@pp%E12", "price": 6}
+
+2019-11-02 07:29:01: -----------Request----------->
+POST http://localhost:5000/v1/product
+
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Type: application/json
+Content-Length: 34
+
+{"name": "Nokia", "price": -45.99}
+
+2019-11-02 07:29:01: -----------Request----------->
+POST http://localhost:5000/v1/product
+
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Type: application/json
+Content-Length: 36
+
+{"name": "Huawei", "price": "10,99"}
+
+2019-11-02 07:29:01: <-----------Response-----------
+Status code:400
+
+Content-Length: 118
+Content-Type: application/problem+json
+Date: Sat, 02 Nov 2019 19:29:01 GMT
+Server: waitress
+
+{
+    "detail": "'10,99' is not of type 'number'",
+    "status": 400,
+    "title": "Bad Request",
+    "type": "about:blank"
+}
+
+2019-11-02 07:29:01: -----------Request----------->
 GET http://localhost:5000/v1/product/4
 
 User-Agent: python-requests/2.22.0
@@ -190,12 +265,12 @@ Content-Type: application/json
 
 None
 
-2019-11-02 12:19:02: <-----------Response-----------
+2019-11-02 07:29:01: <-----------Response-----------
 Status code:200
 
 Content-Length: 51
 Content-Type: application/json
-Date: Sat, 02 Nov 2019 12:19:02 GMT
+Date: Sat, 02 Nov 2019 19:29:01 GMT
 Server: waitress
 
 {
@@ -204,7 +279,33 @@ Server: waitress
     "price": "999.99"
 }
 
-2019-11-02 12:19:02: -----------Request----------->
+2019-11-02 07:29:01: -----------Request----------->
+GET http://localhost:5000/v1/product/0
+
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Type: application/json
+
+None
+
+2019-11-02 07:29:01: <-----------Response-----------
+Status code:404
+
+Content-Length: 205
+Content-Type: application/problem+json
+Date: Sat, 02 Nov 2019 19:29:01 GMT
+Server: waitress
+
+{
+    "detail": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank"
+}
+
+2019-11-02 07:29:01: -----------Request----------->
 DELETE http://localhost:5000/v1/product/2
 
 User-Agent: python-requests/2.22.0
@@ -216,7 +317,7 @@ Content-Length: 0
 
 None
 
-2019-11-02 12:19:02: -----------Request----------->
+2019-11-02 07:29:01: -----------Request----------->
 GET http://localhost:5000/v1/product/2
 
 User-Agent: python-requests/2.22.0
@@ -227,12 +328,12 @@ Content-Type: application/json
 
 None
 
-2019-11-02 12:19:02: <-----------Response-----------
+2019-11-02 07:29:01: <-----------Response-----------
 Status code:404
 
 Content-Length: 205
 Content-Type: application/problem+json
-Date: Sat, 02 Nov 2019 12:19:02 GMT
+Date: Sat, 02 Nov 2019 19:29:01 GMT
 Server: waitress
 
 {
@@ -242,7 +343,7 @@ Server: waitress
     "type": "about:blank"
 }
 
-2019-11-02 12:19:02: -----------Request----------->
+2019-11-02 07:29:01: -----------Request----------->
 DELETE http://localhost:5000/v1/product/2
 
 User-Agent: python-requests/2.22.0
@@ -254,12 +355,12 @@ Content-Length: 0
 
 None
 
-2019-11-02 12:19:02: <-----------Response-----------
+2019-11-02 07:29:01: <-----------Response-----------
 Status code:404
 
 Content-Length: 205
 Content-Type: application/problem+json
-Date: Sat, 02 Nov 2019 12:19:02 GMT
+Date: Sat, 02 Nov 2019 19:29:01 GMT
 Server: waitress
 
 {

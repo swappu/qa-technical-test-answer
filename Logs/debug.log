@@ -1,10 +1,20 @@
-2019-11-02 12:19:02 [INFO   ][ln-172]: Calling test_products_api_result.
-2019-11-02 12:19:02 [INFO   ][ln-189]: Test test_products_api_result passed.
-2019-11-02 12:19:02 [INFO   ][ln-192]: Calling test_product_put_result.
-2019-11-02 12:19:02 [INFO   ][ln-200]: Test test_product_put_result passed.
-2019-11-02 12:19:02 [INFO   ][ln-203]: Calling test_product_post_result.
-2019-11-02 12:19:02 [INFO   ][ln-208]: Test test_product_post_result passed.
-2019-11-02 12:19:02 [INFO   ][ln-211]: Calling test_product_get_result.
-2019-11-02 12:19:02 [INFO   ][ln-223]: Test test_product_get_result passed.
-2019-11-02 12:19:02 [INFO   ][ln-226]: Calling test_product_delete_result.
-2019-11-02 12:19:02 [INFO   ][ln-235]: Test test_product_delete_result passed.
+2019-11-02 07:29:01 [INFO   ][ln-169]: Calling test_products_api_result.
+2019-11-02 07:29:01 [INFO   ][ln-186]: Test test_products_api_result passed.
+2019-11-02 07:29:01 [INFO   ][ln-189]: Calling test_product_put_result.
+2019-11-02 07:29:01 [INFO   ][ln-197]: Test test_product_put_result passed.
+2019-11-02 07:29:01 [INFO   ][ln-200]: Calling test_product_post_result.
+2019-11-02 07:29:01 [INFO   ][ln-205]: Test test_product_post_result passed.
+2019-11-02 07:29:01 [INFO   ][ln-208]: Calling test_product_empty_post_result.
+2019-11-02 07:29:01 [INFO   ][ln-215]: Test test_product_empty_post_result passed.
+2019-11-02 07:29:01 [INFO   ][ln-218]: Calling test_product_post_special_characters_in_product.
+2019-11-02 07:29:01 [INFO   ][ln-222]: Test test_product_post_special_characters_in_product passed.
+2019-11-02 07:29:01 [INFO   ][ln-225]: Calling test_product_post_negative_numbers_in_product.
+2019-11-02 07:29:01 [INFO   ][ln-229]: Test test_product_post_negative_numbers_in_product passed.
+2019-11-02 07:29:01 [INFO   ][ln-232]: Calling test_product_post_invalid_value_in_product.
+2019-11-02 07:29:01 [INFO   ][ln-236]: Test test_product_post_invalid_value_in_product passed.
+2019-11-02 07:29:01 [INFO   ][ln-239]: Calling test_product_get_result.
+2019-11-02 07:29:01 [INFO   ][ln-251]: Test test_product_get_result passed.
+2019-11-02 07:29:01 [INFO   ][ln-254]: Calling test_product_get_with_invalid_index_result.
+2019-11-02 07:29:01 [INFO   ][ln-259]: Test test_product_get_with_invalid_index_result passed.
+2019-11-02 07:29:01 [INFO   ][ln-262]: Calling test_product_delete_result.
+2019-11-02 07:29:01 [INFO   ][ln-271]: Test test_product_delete_result passed.

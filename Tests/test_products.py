@@ -154,7 +154,9 @@ def delete_all():
     else:
         print('[!] Request Failed')
 
+
 class TestProductsAPI:
+
     """
     Test products API.
     """
@@ -202,6 +204,37 @@ class TestProductsAPI:
 
         log.info('Test %s passed.' % inspect.stack()[0][3])
 
+    def test_product_empty_post_result(self):
+        log.info('Calling %s.' % inspect.stack()[0][3])
+        #    Check post returns correct error code if empty data is entered
+
+        payload = {'name1': "", 'price1': ""}
+        response = requests.post(api_url_base + "product", headers=headers, data=json.dumps(payload))
+        assert (response.status_code == 400)
+
+        log.info('Test %s passed.' % inspect.stack()[0][3])
+
+    def test_product_post_special_characters_in_product(self):
+        log.info('Calling %s.' % inspect.stack()[0][3])
+
+        resp = post_product_api("@pp%E12", 6)
+        assert (resp.status_code == 200)
+        log.info('Test %s passed.' % inspect.stack()[0][3])
+
+    def test_product_post_negative_numbers_in_product(self):
+        log.info('Calling %s.' % inspect.stack()[0][3])
+
+        resp = post_product_api("Nokia", -45.99)
+        assert (resp.status_code == 200)
+        log.info('Test %s passed.' % inspect.stack()[0][3])
+
+    def test_product_post_invalid_value_in_product(self):
+        log.info('Calling %s.' % inspect.stack()[0][3])
+
+        resp = post_product_api("Huawei", "10,99")
+        assert (resp.status_code == 400)
+        log.info('Test %s passed.' % inspect.stack()[0][3])
+
     def test_product_get_result(self):
         log.info('Calling %s.' % inspect.stack()[0][3])
 
@@ -214,6 +247,14 @@ class TestProductsAPI:
             assert(product['price'] == "999.99")
         else:
             print('[!] Request Failed')
+
+        log.info('Test %s passed.' % inspect.stack()[0][3])
+
+    def test_product_get_with_invalid_index_result(self):
+        log.info('Calling %s.' % inspect.stack()[0][3])
+
+        resp = get_product_api("0")
+        assert (resp.status_code == 404)
 
         log.info('Test %s passed.' % inspect.stack()[0][3])
 
