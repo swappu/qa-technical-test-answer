@@ -241,7 +241,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 02-Nov-2019 at 07:57:02 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.0</p>
+    <p>Report generated on 02-Nov-2019 at 12:19:02 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -257,7 +257,7 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.7.4</td></tr></table>
     <h2>Summary</h2>
-    <p>5 tests ran in 0.35 seconds. </p>
+    <p>5 tests ran in 0.52 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">5 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -273,11 +273,43 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/test_products.py::TestProductsAPI::test_products_api_result</td>
-          <td class="col-duration">0.10</td>
+          <td class="col-duration">0.14</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     log:test_products.py:162 Calling test_products_api_result.
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     log_api:test_products.py:74 -----------Request-----------&gt;
+                                     DELETE http://localhost:5000/v1/product/1
+                                     
+                                     User-Agent: python-requests/2.22.0
+                                     Accept-Encoding: gzip, deflate
+                                     Accept: */*
+                                     Connection: keep-alive
+                                     Content-Type: application/json
+                                     Content-Length: 0
+                                     
+                                     None
+INFO     log_api:test_products.py:74 -----------Request-----------&gt;
+                                     DELETE http://localhost:5000/v1/product/3
+                                     
+                                     User-Agent: python-requests/2.22.0
+                                     Accept-Encoding: gzip, deflate
+                                     Accept: */*
+                                     Connection: keep-alive
+                                     Content-Type: application/json
+                                     Content-Length: 0
+                                     
+                                     None
+INFO     log_api:test_products.py:74 -----------Request-----------&gt;
+                                     DELETE http://localhost:5000/v1/product/4
+                                     
+                                     User-Agent: python-requests/2.22.0
+                                     Accept-Encoding: gzip, deflate
+                                     Accept: */*
+                                     Connection: keep-alive
+                                     Content-Type: application/json
+                                     Content-Length: 0
+                                     
+                                     None<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     log:test_products.py:172 Calling test_products_api_result.
 INFO     log_api:test_products.py:74 -----------Request-----------&gt;
                                      GET http://localhost:5000/v1/products
                                      
@@ -291,80 +323,25 @@ INFO     log_api:test_products.py:74 -----------Request-----------&gt;
 INFO     log_api:test_products.py:110 &lt;-----------Response-----------
                                       Status code:200
                                       
-                                      Content-Length: 743
+                                      Content-Length: 3
                                       Content-Type: application/json
-                                      Date: Sat, 02 Nov 2019 07:57:02 GMT
+                                      Date: Sat, 02 Nov 2019 12:19:02 GMT
                                       Server: waitress
                                       
-                                      [
-                                          {
-                                              &quot;id&quot;: 1,
-                                              &quot;name&quot;: &quot;Lavender heart&quot;,
-                                              &quot;price&quot;: &quot;9.25&quot;
-                                          },
-                                          {
-                                              &quot;id&quot;: 3,
-                                              &quot;name&quot;: &quot;Kids T-shirt&quot;,
-                                              &quot;price&quot;: &quot;19.95&quot;
-                                          },
-                                          {
-                                              &quot;id&quot;: 4,
-                                              &quot;name&quot;: &quot;iPhone&quot;,
-                                              &quot;price&quot;: &quot;899.99&quot;
-                                          },
-                                          {
-                                              &quot;id&quot;: 5,
-                                              &quot;name&quot;: &quot;iPhone&quot;,
-                                              &quot;price&quot;: &quot;899.99&quot;
-                                          },
-                                          {
-                                              &quot;id&quot;: 6,
-                                              &quot;name&quot;: &quot;iPhone&quot;,
-                                              &quot;price&quot;: &quot;899.99&quot;
-                                          },
-                                          {
-                                              &quot;id&quot;: 7,
-                                              &quot;name&quot;: &quot;iPhone&quot;,
-                                              &quot;price&quot;: &quot;899.99&quot;
-                                          },
-                                          {
-                                              &quot;id&quot;: 8,
-                                              &quot;name&quot;: &quot;iPhone&quot;,
-                                              &quot;price&quot;: &quot;899.99&quot;
-                                          },
-                                          {
-                                              &quot;id&quot;: 9,
-                                              &quot;name&quot;: &quot;iPhone&quot;,
-                                              &quot;price&quot;: &quot;899.99&quot;
-                                          },
-                                          {
-                                              &quot;id&quot;: 10,
-                                              &quot;name&quot;: &quot;iPhone&quot;,
-                                              &quot;price&quot;: &quot;899.99&quot;
-                                          },
-                                          {
-                                              &quot;id&quot;: 11,
-                                              &quot;name&quot;: &quot;iPhone&quot;,
-                                              &quot;price&quot;: &quot;899.99&quot;
-                                          },
-                                          {
-                                              &quot;id&quot;: 12,
-                                              &quot;name&quot;: &quot;iPhone&quot;,
-                                              &quot;price&quot;: &quot;899.99&quot;
-                                          }
-                                      ]
-INFO     log:test_products.py:171 Test test_products_api_result passed.<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">Tests/test_products.py::TestProductsAPI::test_product_put_result</td>
-          <td class="col-duration">0.02</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     log:test_products.py:174 Calling test_product_put_result.
+                                      []
 INFO     log_api:test_products.py:74 -----------Request-----------&gt;
-                                     PUT http://localhost:5000/v1/product/2
+                                     POST http://localhost:5000/v1/product
+                                     
+                                     User-Agent: python-requests/2.22.0
+                                     Accept-Encoding: gzip, deflate
+                                     Accept: */*
+                                     Connection: keep-alive
+                                     Content-Type: application/json
+                                     Content-Length: 36
+                                     
+                                     {&quot;name&quot;: &quot;Samsung&quot;, &quot;price&quot;: 899.99}
+INFO     log_api:test_products.py:74 -----------Request-----------&gt;
+                                     POST http://localhost:5000/v1/product
                                      
                                      User-Agent: python-requests/2.22.0
                                      Accept-Encoding: gzip, deflate
@@ -373,13 +350,91 @@ INFO     log_api:test_products.py:74 -----------Request-----------&gt;
                                      Content-Type: application/json
                                      Content-Length: 35
                                      
-                                     {&quot;name&quot;: &quot;iPhone&quot;, &quot;price&quot;: 1000.0}
+                                     {&quot;name&quot;: &quot;Apple&quot;, &quot;price&quot;: 1199.99}
+INFO     log_api:test_products.py:74 -----------Request-----------&gt;
+                                     POST http://localhost:5000/v1/product
+                                     
+                                     User-Agent: python-requests/2.22.0
+                                     Accept-Encoding: gzip, deflate
+                                     Accept: */*
+                                     Connection: keep-alive
+                                     Content-Type: application/json
+                                     Content-Length: 32
+                                     
+                                     {&quot;name&quot;: &quot;Huawei&quot;, &quot;price&quot;: 500}
+INFO     log_api:test_products.py:74 -----------Request-----------&gt;
+                                     GET http://localhost:5000/v1/products
+                                     
+                                     User-Agent: python-requests/2.22.0
+                                     Accept-Encoding: gzip, deflate
+                                     Accept: */*
+                                     Connection: keep-alive
+                                     Content-Type: application/json
+                                     
+                                     None
+INFO     log_api:test_products.py:110 &lt;-----------Response-----------
+                                      Status code:200
+                                      
+                                      Content-Length: 202
+                                      Content-Type: application/json
+                                      Date: Sat, 02 Nov 2019 12:19:02 GMT
+                                      Server: waitress
+                                      
+                                      [
+                                          {
+                                              &quot;id&quot;: 1,
+                                              &quot;name&quot;: &quot;Samsung&quot;,
+                                              &quot;price&quot;: &quot;899.99&quot;
+                                          },
+                                          {
+                                              &quot;id&quot;: 2,
+                                              &quot;name&quot;: &quot;Apple&quot;,
+                                              &quot;price&quot;: &quot;1199.99&quot;
+                                          },
+                                          {
+                                              &quot;id&quot;: 3,
+                                              &quot;name&quot;: &quot;Huawei&quot;,
+                                              &quot;price&quot;: &quot;500.00&quot;
+                                          }
+                                      ]
+INFO     log:test_products.py:189 Test test_products_api_result passed.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/test_products.py::TestProductsAPI::test_product_put_result</td>
+          <td class="col-duration">0.03</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     log:test_products.py:192 Calling test_product_put_result.
+INFO     log_api:test_products.py:74 -----------Request-----------&gt;
+                                     PUT http://localhost:5000/v1/product/3
+                                     
+                                     User-Agent: python-requests/2.22.0
+                                     Accept-Encoding: gzip, deflate
+                                     Accept: */*
+                                     Connection: keep-alive
+                                     Content-Type: application/json
+                                     Content-Length: 43
+                                     
+                                     {&quot;name&quot;: &quot;Samsung Galaxy&quot;, &quot;price&quot;: 799.99}
+INFO     log_api:test_products.py:74 -----------Request-----------&gt;
+                                     PUT http://localhost:5000/v1/product/100
+                                     
+                                     User-Agent: python-requests/2.22.0
+                                     Accept-Encoding: gzip, deflate
+                                     Accept: */*
+                                     Connection: keep-alive
+                                     Content-Type: application/json
+                                     Content-Length: 43
+                                     
+                                     {&quot;name&quot;: &quot;Samsung Galaxy&quot;, &quot;price&quot;: 799.99}
 INFO     log_api:test_products.py:110 &lt;-----------Response-----------
                                       Status code:404
                                       
                                       Content-Length: 205
                                       Content-Type: application/problem+json
-                                      Date: Sat, 02 Nov 2019 07:57:02 GMT
+                                      Date: Sat, 02 Nov 2019 12:19:02 GMT
                                       Server: waitress
                                       
                                       {
@@ -388,7 +443,28 @@ INFO     log_api:test_products.py:110 &lt;-----------Response-----------
                                           &quot;title&quot;: &quot;Not Found&quot;,
                                           &quot;type&quot;: &quot;about:blank&quot;
                                       }
-INFO     log:test_products.py:179 Test test_product_put_result passed.<br/></div></td></tr></tbody>
+INFO     log:test_products.py:200 Test test_product_put_result passed.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/test_products.py::TestProductsAPI::test_product_post_result</td>
+          <td class="col-duration">0.02</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     log:test_products.py:203 Calling test_product_post_result.
+INFO     log_api:test_products.py:74 -----------Request-----------&gt;
+                                     POST http://localhost:5000/v1/product
+                                     
+                                     User-Agent: python-requests/2.22.0
+                                     Accept-Encoding: gzip, deflate
+                                     Accept: */*
+                                     Connection: keep-alive
+                                     Content-Type: application/json
+                                     Content-Length: 31
+                                     
+                                     {&quot;name&quot;: &quot;LG&quot;, &quot;price&quot;: 999.99}
+INFO     log:test_products.py:208 Test test_product_post_result passed.<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
@@ -397,7 +473,51 @@ INFO     log:test_products.py:179 Test test_product_put_result passed.<br/></div
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     log:test_products.py:182 Calling test_product_get_result.
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     log:test_products.py:211 Calling test_product_get_result.
+INFO     log_api:test_products.py:74 -----------Request-----------&gt;
+                                     GET http://localhost:5000/v1/product/4
+                                     
+                                     User-Agent: python-requests/2.22.0
+                                     Accept-Encoding: gzip, deflate
+                                     Accept: */*
+                                     Connection: keep-alive
+                                     Content-Type: application/json
+                                     
+                                     None
+INFO     log_api:test_products.py:110 &lt;-----------Response-----------
+                                      Status code:200
+                                      
+                                      Content-Length: 51
+                                      Content-Type: application/json
+                                      Date: Sat, 02 Nov 2019 12:19:02 GMT
+                                      Server: waitress
+                                      
+                                      {
+                                          &quot;id&quot;: 4,
+                                          &quot;name&quot;: &quot;LG&quot;,
+                                          &quot;price&quot;: &quot;999.99&quot;
+                                      }
+INFO     log:test_products.py:223 Test test_product_get_result passed.<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Tests/test_products.py::TestProductsAPI::test_product_delete_result</td>
+          <td class="col-duration">0.05</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     log:test_products.py:226 Calling test_product_delete_result.
+INFO     log_api:test_products.py:74 -----------Request-----------&gt;
+                                     DELETE http://localhost:5000/v1/product/2
+                                     
+                                     User-Agent: python-requests/2.22.0
+                                     Accept-Encoding: gzip, deflate
+                                     Accept: */*
+                                     Connection: keep-alive
+                                     Content-Type: application/json
+                                     Content-Length: 0
+                                     
+                                     None
 INFO     log_api:test_products.py:74 -----------Request-----------&gt;
                                      GET http://localhost:5000/v1/product/2
                                      
@@ -413,7 +533,7 @@ INFO     log_api:test_products.py:110 &lt;-----------Response-----------
                                       
                                       Content-Length: 205
                                       Content-Type: application/problem+json
-                                      Date: Sat, 02 Nov 2019 07:57:02 GMT
+                                      Date: Sat, 02 Nov 2019 12:19:02 GMT
                                       Server: waitress
                                       
                                       {
@@ -422,37 +542,6 @@ INFO     log_api:test_products.py:110 &lt;-----------Response-----------
                                           &quot;title&quot;: &quot;Not Found&quot;,
                                           &quot;type&quot;: &quot;about:blank&quot;
                                       }
-INFO     log:test_products.py:193 Test test_product_get_result passed.<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">Tests/test_products.py::TestProductsAPI::test_product_post_result</td>
-          <td class="col-duration">0.02</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     log:test_products.py:196 Calling test_product_post_result.
-INFO     log_api:test_products.py:74 -----------Request-----------&gt;
-                                     POST http://localhost:5000/v1/product
-                                     
-                                     User-Agent: python-requests/2.22.0
-                                     Accept-Encoding: gzip, deflate
-                                     Accept: */*
-                                     Connection: keep-alive
-                                     Content-Type: application/json
-                                     Content-Length: 35
-                                     
-                                     {&quot;name&quot;: &quot;iPhone&quot;, &quot;price&quot;: 899.99}
-INFO     log:test_products.py:201 Test test_product_post_result passed.<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">Tests/test_products.py::TestProductsAPI::test_product_delete_result</td>
-          <td class="col-duration">0.02</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     log:test_products.py:204 Calling test_product_delete_result.
 INFO     log_api:test_products.py:74 -----------Request-----------&gt;
                                      DELETE http://localhost:5000/v1/product/2
                                      
@@ -469,7 +558,7 @@ INFO     log_api:test_products.py:110 &lt;-----------Response-----------
                                       
                                       Content-Length: 205
                                       Content-Type: application/problem+json
-                                      Date: Sat, 02 Nov 2019 07:57:02 GMT
+                                      Date: Sat, 02 Nov 2019 12:19:02 GMT
                                       Server: waitress
                                       
                                       {
@@ -478,4 +567,4 @@ INFO     log_api:test_products.py:110 &lt;-----------Response-----------
                                           &quot;title&quot;: &quot;Not Found&quot;,
                                           &quot;type&quot;: &quot;about:blank&quot;
                                       }
-INFO     log:test_products.py:216 Test test_product_delete_result passed.<br/></div></td></tr></tbody></table></body></html>
+INFO     log:test_products.py:235 Test test_product_delete_result passed.<br/></div></td></tr></tbody></table></body></html>

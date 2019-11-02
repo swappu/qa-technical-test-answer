@@ -1,4 +1,40 @@
-2019-11-02 07:57:02: -----------Request----------->
+2019-11-02 12:19:02: -----------Request----------->
+DELETE http://localhost:5000/v1/product/1
+
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Type: application/json
+Content-Length: 0
+
+None
+
+2019-11-02 12:19:02: -----------Request----------->
+DELETE http://localhost:5000/v1/product/3
+
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Type: application/json
+Content-Length: 0
+
+None
+
+2019-11-02 12:19:02: -----------Request----------->
+DELETE http://localhost:5000/v1/product/4
+
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Type: application/json
+Content-Length: 0
+
+None
+
+2019-11-02 12:19:02: -----------Request----------->
 GET http://localhost:5000/v1/products
 
 User-Agent: python-requests/2.22.0
@@ -9,126 +45,29 @@ Content-Type: application/json
 
 None
 
-2019-11-02 07:57:02: <-----------Response-----------
+2019-11-02 12:19:02: <-----------Response-----------
 Status code:200
 
-Content-Length: 743
+Content-Length: 3
 Content-Type: application/json
-Date: Sat, 02 Nov 2019 07:57:02 GMT
+Date: Sat, 02 Nov 2019 12:19:02 GMT
 Server: waitress
 
-[
-    {
-        "id": 1,
-        "name": "Lavender heart",
-        "price": "9.25"
-    },
-    {
-        "id": 3,
-        "name": "Kids T-shirt",
-        "price": "19.95"
-    },
-    {
-        "id": 4,
-        "name": "iPhone",
-        "price": "899.99"
-    },
-    {
-        "id": 5,
-        "name": "iPhone",
-        "price": "899.99"
-    },
-    {
-        "id": 6,
-        "name": "iPhone",
-        "price": "899.99"
-    },
-    {
-        "id": 7,
-        "name": "iPhone",
-        "price": "899.99"
-    },
-    {
-        "id": 8,
-        "name": "iPhone",
-        "price": "899.99"
-    },
-    {
-        "id": 9,
-        "name": "iPhone",
-        "price": "899.99"
-    },
-    {
-        "id": 10,
-        "name": "iPhone",
-        "price": "899.99"
-    },
-    {
-        "id": 11,
-        "name": "iPhone",
-        "price": "899.99"
-    },
-    {
-        "id": 12,
-        "name": "iPhone",
-        "price": "899.99"
-    }
-]
+[]
 
-2019-11-02 07:57:02: -----------Request----------->
-PUT http://localhost:5000/v1/product/2
+2019-11-02 12:19:02: -----------Request----------->
+POST http://localhost:5000/v1/product
 
 User-Agent: python-requests/2.22.0
 Accept-Encoding: gzip, deflate
 Accept: */*
 Connection: keep-alive
 Content-Type: application/json
-Content-Length: 35
+Content-Length: 36
 
-{"name": "iPhone", "price": 1000.0}
+{"name": "Samsung", "price": 899.99}
 
-2019-11-02 07:57:02: <-----------Response-----------
-Status code:404
-
-Content-Length: 205
-Content-Type: application/problem+json
-Date: Sat, 02 Nov 2019 07:57:02 GMT
-Server: waitress
-
-{
-    "detail": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.",
-    "status": 404,
-    "title": "Not Found",
-    "type": "about:blank"
-}
-
-2019-11-02 07:57:02: -----------Request----------->
-GET http://localhost:5000/v1/product/2
-
-User-Agent: python-requests/2.22.0
-Accept-Encoding: gzip, deflate
-Accept: */*
-Connection: keep-alive
-Content-Type: application/json
-
-None
-
-2019-11-02 07:57:02: <-----------Response-----------
-Status code:404
-
-Content-Length: 205
-Content-Type: application/problem+json
-Date: Sat, 02 Nov 2019 07:57:02 GMT
-Server: waitress
-
-{
-    "detail": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.",
-    "status": 404,
-    "title": "Not Found",
-    "type": "about:blank"
-}
-
-2019-11-02 07:57:02: -----------Request----------->
+2019-11-02 12:19:02: -----------Request----------->
 POST http://localhost:5000/v1/product
 
 User-Agent: python-requests/2.22.0
@@ -138,9 +77,134 @@ Connection: keep-alive
 Content-Type: application/json
 Content-Length: 35
 
-{"name": "iPhone", "price": 899.99}
+{"name": "Apple", "price": 1199.99}
 
-2019-11-02 07:57:02: -----------Request----------->
+2019-11-02 12:19:02: -----------Request----------->
+POST http://localhost:5000/v1/product
+
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Type: application/json
+Content-Length: 32
+
+{"name": "Huawei", "price": 500}
+
+2019-11-02 12:19:02: -----------Request----------->
+GET http://localhost:5000/v1/products
+
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Type: application/json
+
+None
+
+2019-11-02 12:19:02: <-----------Response-----------
+Status code:200
+
+Content-Length: 202
+Content-Type: application/json
+Date: Sat, 02 Nov 2019 12:19:02 GMT
+Server: waitress
+
+[
+    {
+        "id": 1,
+        "name": "Samsung",
+        "price": "899.99"
+    },
+    {
+        "id": 2,
+        "name": "Apple",
+        "price": "1199.99"
+    },
+    {
+        "id": 3,
+        "name": "Huawei",
+        "price": "500.00"
+    }
+]
+
+2019-11-02 12:19:02: -----------Request----------->
+PUT http://localhost:5000/v1/product/3
+
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Type: application/json
+Content-Length: 43
+
+{"name": "Samsung Galaxy", "price": 799.99}
+
+2019-11-02 12:19:02: -----------Request----------->
+PUT http://localhost:5000/v1/product/100
+
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Type: application/json
+Content-Length: 43
+
+{"name": "Samsung Galaxy", "price": 799.99}
+
+2019-11-02 12:19:02: <-----------Response-----------
+Status code:404
+
+Content-Length: 205
+Content-Type: application/problem+json
+Date: Sat, 02 Nov 2019 12:19:02 GMT
+Server: waitress
+
+{
+    "detail": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank"
+}
+
+2019-11-02 12:19:02: -----------Request----------->
+POST http://localhost:5000/v1/product
+
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Type: application/json
+Content-Length: 31
+
+{"name": "LG", "price": 999.99}
+
+2019-11-02 12:19:02: -----------Request----------->
+GET http://localhost:5000/v1/product/4
+
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Type: application/json
+
+None
+
+2019-11-02 12:19:02: <-----------Response-----------
+Status code:200
+
+Content-Length: 51
+Content-Type: application/json
+Date: Sat, 02 Nov 2019 12:19:02 GMT
+Server: waitress
+
+{
+    "id": 4,
+    "name": "LG",
+    "price": "999.99"
+}
+
+2019-11-02 12:19:02: -----------Request----------->
 DELETE http://localhost:5000/v1/product/2
 
 User-Agent: python-requests/2.22.0
@@ -152,12 +216,50 @@ Content-Length: 0
 
 None
 
-2019-11-02 07:57:02: <-----------Response-----------
+2019-11-02 12:19:02: -----------Request----------->
+GET http://localhost:5000/v1/product/2
+
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Type: application/json
+
+None
+
+2019-11-02 12:19:02: <-----------Response-----------
 Status code:404
 
 Content-Length: 205
 Content-Type: application/problem+json
-Date: Sat, 02 Nov 2019 07:57:02 GMT
+Date: Sat, 02 Nov 2019 12:19:02 GMT
+Server: waitress
+
+{
+    "detail": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank"
+}
+
+2019-11-02 12:19:02: -----------Request----------->
+DELETE http://localhost:5000/v1/product/2
+
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Type: application/json
+Content-Length: 0
+
+None
+
+2019-11-02 12:19:02: <-----------Response-----------
+Status code:404
+
+Content-Length: 205
+Content-Type: application/problem+json
+Date: Sat, 02 Nov 2019 12:19:02 GMT
 Server: waitress
 
 {

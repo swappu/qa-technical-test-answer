@@ -150,22 +150,40 @@ def delete_product_api(product_code):
     pretty_print_response_json(response)
     return response
 
+def delete_all():
+    response = requests.get(api_url_base + "products", headers=headers)
+    products = json.loads(response.content.decode('utf-8'))
+    if products is not None:
+        for product in products:
+            delete_product_api(str(product['id']))
+    else:
+        print('[!] Request Failed')
+
 class TestProductsAPI:
     """
     Test products API.
     """
 
     def setup_class(cls):
-        log.debug('To load test data.')
+        log.debug('To clear test data.')
+        delete_all()
 
     def test_products_api_result(self):
         log.info('Calling %s.' % inspect.stack()[0][3])
 
         resp = get_products_api()
         assert resp.status_code == 200
+
+        post_product_api("Samsung", 899.99)
+        post_product_api("Apple", 1199.99)
+        post_product_api("Huawei", 500)
+
+        resp = get_products_api()
+        assert resp.status_code == 200
+
         products = resp.content.decode('utf-8')
         if products is not None:
-            assert len(products) != 0
+            assert len(products) != 3
         else:
             print('[!] Request Failed')
         log.info('Test %s passed.' % inspect.stack()[0][3])
@@ -173,30 +191,34 @@ class TestProductsAPI:
     def test_product_put_result(self):
         log.info('Calling %s.' % inspect.stack()[0][3])
 
-        resp = put_product_api("2", "iPhone", 1000.00)
-        assert(resp.status_code == 200 or resp.status_code == 404)
+        resp = put_product_api("3", "Samsung Galaxy", 799.99)
+        assert(resp.status_code == 200)
 
-        log.info('Test %s passed.' % inspect.stack()[0][3])
-
-    def test_product_get_result(self):
-        log.info('Calling %s.' % inspect.stack()[0][3])
-
-        resp = get_product_api("2")
-        assert(resp.status_code == 200 or resp.status_code == 404)
-        product = json.loads(resp.content.decode('utf-8'))
-        if product is not None and product['status'] != 404:
-            print(product)
-            product['id'].assertEquals("2")
-        else:
-            print('[!] Request Failed')
+        resp = put_product_api("100", "Samsung Galaxy", 799.99)
+        assert(resp.status_code == 404)
 
         log.info('Test %s passed.' % inspect.stack()[0][3])
 
     def test_product_post_result(self):
         log.info('Calling %s.' % inspect.stack()[0][3])
 
-        resp = post_product_api("iPhone", 899.99)
-        assert(resp.status_code == 200 or resp.status_code == 404)
+        resp = post_product_api("LG", 999.99)
+        assert (resp.status_code == 200)
+
+        log.info('Test %s passed.' % inspect.stack()[0][3])
+
+    def test_product_get_result(self):
+        log.info('Calling %s.' % inspect.stack()[0][3])
+
+        resp = get_product_api("4")
+        assert(resp.status_code == 200)
+        product = json.loads(resp.content.decode('utf-8'))
+        if product is not None:
+            assert(product['id'] == 4)
+            assert(product['name'] == "LG")
+            assert(product['price'] == "999.99")
+        else:
+            print('[!] Request Failed')
 
         log.info('Test %s passed.' % inspect.stack()[0][3])
 
@@ -204,13 +226,10 @@ class TestProductsAPI:
         log.info('Calling %s.' % inspect.stack()[0][3])
 
         resp = delete_product_api("2")
-        assert(resp.status_code == 200 or resp.status_code == 404)
-        assert resp.text
-        product = json.loads(resp.content.decode('utf-8'))
-        if product is not None:
-            print(product)
-            # assert product['product_code'] == "1"
-        else:
-            print('[!] Request Failed')
+        assert(resp.status_code == 200)
+        resp = get_product_api("2")
+        assert(resp.status_code == 404)
+        resp = delete_product_api("2")
+        assert(resp.status_code == 404)
 
         log.info('Test %s passed.' % inspect.stack()[0][3])
