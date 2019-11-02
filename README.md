@@ -2,13 +2,7 @@
 
 REST API testing
 
-## Getting Started
-
-These instructions will get you a copy of the tests up and running on your local machine for testing purposes.
-
 ### Prerequisites
-
-What things you need to install the software and how to install them
 
 ```
 python3
@@ -16,29 +10,57 @@ python3
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
 
 ```
-python3
+pip install python3
 ```
 
 ## Running the tests
 
+```
 python3 -m pytest -sv --html report.html
+```
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
+```
+Each test verifies the whether the REST API is working as per the Swagger specification or not.
+```
+### Bugs found so far
+
+get products API
 
 ```
-Each test verifies the whether the REST API is working as per the specification or not.
+Swagger says this API returns 404 but couldn't reproduce this error as its returning an empty list correctly so not sure when we get 404 error.
+The JSON response keys are incorrect.
+price should be product_price
+id should be product_code
+```
+get product API
+
+```
+The JSON response keys are incorrect.
+price should be product_price
+id should be product_code
+```
+put product API
+
+```
+The JSON response keys are incorrect.
+price should be product_price
+id should be product_code
+```
+post product API
+
+```
+This doesn't return any JSON object on success response.
 ```
 
-### And coding style tests
+delete product API
 
-Python test scripts
+```
+This doesn't return any JSON object on success response.
+```
 
 ## Deployment
 
@@ -47,10 +69,6 @@ Given a sample circleci config which can be used to test and deploy
 ## Authors
 
 * **Swaroopa Mooda** - *Initial work*
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
