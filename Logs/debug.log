@@ -1,0 +1,10 @@
+2019-11-02 07:57:02 [INFO   ][ln-162]: Calling test_products_api_result.
+2019-11-02 07:57:02 [INFO   ][ln-171]: Test test_products_api_result passed.
+2019-11-02 07:57:02 [INFO   ][ln-174]: Calling test_product_put_result.
+2019-11-02 07:57:02 [INFO   ][ln-179]: Test test_product_put_result passed.
+2019-11-02 07:57:02 [INFO   ][ln-182]: Calling test_product_get_result.
+2019-11-02 07:57:02 [INFO   ][ln-193]: Test test_product_get_result passed.
+2019-11-02 07:57:02 [INFO   ][ln-196]: Calling test_product_post_result.
+2019-11-02 07:57:02 [INFO   ][ln-201]: Test test_product_post_result passed.
+2019-11-02 07:57:02 [INFO   ][ln-204]: Calling test_product_delete_result.
+2019-11-02 07:57:02 [INFO   ][ln-216]: Test test_product_delete_result passed.
