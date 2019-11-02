@@ -11,17 +11,12 @@ python3 -m pytest -sv --html report.html
 Python version: 3.7 or above
 
 """
-from time import sleep
-from datetime import datetime
 import logging
-from logging.handlers import RotatingFileHandler
 import requests
 import json
 import os
-# import ipdb
 import ast
 import inspect
-import random
 import sys
 
 if sys.version_info < (3, 7):
@@ -181,9 +176,9 @@ class TestProductsAPI:
         resp = get_products_api()
         assert resp.status_code == 200
 
-        products = resp.content.decode('utf-8')
+        products = json.loads(resp.content.decode('utf-8'))
         if products is not None:
-            assert len(products) != 3
+            assert len(products) == 3
         else:
             print('[!] Request Failed')
         log.info('Test %s passed.' % inspect.stack()[0][3])
