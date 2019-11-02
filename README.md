@@ -53,7 +53,8 @@ id should be product_code
 post product API
 
 ```
-This doesn't return any JSON object on success response.
+1. This doesn't return any JSON object on success response.
+2. Its taking negative numbers in product_price which is invalid
 ```
 
 delete product API
